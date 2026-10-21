@@ -5,39 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_4_VisorImagenes"
         mc:Ignorable="d"
-        Title="4 Visor Imagenes" Height="425" Width="700">
+        Title="3 Visor Imagenes" Height="425" Width="700">
+    <Window.Resources>
+        <Style TargetType="StackPanel" x:Key="StackPanelCreditos">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="Background" Value="LightBlue"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Rubik"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="20"></Setter>
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Background" Value="LightGreen"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
+    </Window.Resources>
     <DockPanel>
-        <StackPanel Margin="10" DockPanel.Dock="Bottom" Background="LightBlue" Orientation="Horizontal">
-            <Label Margin="5" FontFamily="Rubik" FontSize="20">N de imagenes: 10</Label>
-            <Label Margin="5" FontFamily="Rubik" FontSize="20">Diseñado por Alvaro Monsonis</Label>
+        <StackPanel DockPanel.Dock="Bottom">
+            <Label>N de imagenes: 10</Label>
+            <Label>Diseñado por Alvaro Monsonis</Label>
         </StackPanel>
-        <Border BorderBrush="Black" BorderThickness="3" CornerRadius="8" Margin="10" DockPanel.Dock="Right" Background="LightGreen">
+        <Border DockPanel.Dock="Right">
             <DockPanel LastChildFill="False">
                 <StackPanel DockPanel.Dock="Top">
-                    <Button Margin="5" Width="100">Añadir imagen</Button>
-                    <Button Margin="5" Width="100">Eliminar imagen</Button>
-                    <Button Margin="5" Width="100">Eliminar todas</Button>
+                    <Button>Añadir imagen</Button>
+                    <Button>Eliminar imagen</Button>
+                    <Button>Eliminar todas</Button>
                 </StackPanel>
                 <StackPanel DockPanel.Dock="Bottom">
-                    <Button Margin="5" Width="100">Rotar</Button>
-                    <Button Margin="5" Width="100">Recortar</Button>
+                    <Button>Rotar</Button>
+                    <Button>Recortar</Button>
                 </StackPanel>
             </DockPanel>
         </Border>
         <StackPanel>
-            <Label FontFamily="Rubik" HorizontalAlignment="Center" FontSize="40">Visor de imagenes</Label>
+            <Label>Visor de imagenes</Label>
             <WrapPanel>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
-                <Image Margin="5" Source="Assets/espanita.webp" Width="120"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
+                <Image Source="Assets/espanita.webp"/>
             </WrapPanel>
         </StackPanel>
     </DockPanel>
