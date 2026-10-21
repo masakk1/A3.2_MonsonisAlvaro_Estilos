@@ -1,18 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_FormularioStackPanel", "1_FormularioStackPanel\1_FormularioStackPanel.csproj", "{0400F040-BA8F-47F5-824D-2E9A0F627CCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_1_FormularioStackPanel_Estilo", "_1_FormularioStackPanel_Estilo\_1_FormularioStackPanel_Estilo.csproj", "{0400F040-BA8F-47F5-824D-2E9A0F627CCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_EquiposNBA", "2_EquiposNBA\2_EquiposNBA.csproj", "{2F1DE5BC-112C-4FFC-B57C-27C036A00818}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_2_EquiposNBA_Estilo", "_2_EquiposNBA_Estilo\_2_EquiposNBA_Estilo.csproj", "{2F1DE5BC-112C-4FFC-B57C-27C036A00818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_Mosaico", "3_Mosaico\3_Mosaico.csproj", "{32EE0661-C533-40F4-BCB5-B97123784145}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_3_VisorImagenes_Estilo", "_3_VisorImagenes_Estilo\_3_VisorImagenes_Estilo.csproj", "{C6FC0824-8E30-41CF-9EEC-AD20B12BA7DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_VisorImagenes", "4_VisorImagenes\4_VisorImagenes.csproj", "{C6FC0824-8E30-41CF-9EEC-AD20B12BA7DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_5_Calculadora_Dinamica", "_5_Calculadora_Dinamica\_5_Calculadora_Dinamica.csproj", "{D90147EA-EBC5-446E-BAAC-DE6876FE4A91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_Calculadora", "5_Calculadora\5_Calculadora.csproj", "{D90147EA-EBC5-446E-BAAC-DE6876FE4A91}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_Estaciones", "6_Estaciones\6_Estaciones.csproj", "{A63C4D8F-DF74-4E76-85C6-B851CF72B980}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_Formulario", "7_Formulario\7_Formulario.csproj", "{0E0E8A97-B01C-4C30-BD65-452181E5AB13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_4_Formulario_Estilo", "_4_Formulario_Estilo\_4_Formulario_Estilo.csproj", "{0E0E8A97-B01C-4C30-BD65-452181E5AB13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +24,6 @@ Global
 		{2F1DE5BC-112C-4FFC-B57C-27C036A00818}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F1DE5BC-112C-4FFC-B57C-27C036A00818}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F1DE5BC-112C-4FFC-B57C-27C036A00818}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32EE0661-C533-40F4-BCB5-B97123784145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32EE0661-C533-40F4-BCB5-B97123784145}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32EE0661-C533-40F4-BCB5-B97123784145}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32EE0661-C533-40F4-BCB5-B97123784145}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C6FC0824-8E30-41CF-9EEC-AD20B12BA7DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C6FC0824-8E30-41CF-9EEC-AD20B12BA7DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6FC0824-8E30-41CF-9EEC-AD20B12BA7DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -40,10 +32,6 @@ Global
 		{D90147EA-EBC5-446E-BAAC-DE6876FE4A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D90147EA-EBC5-446E-BAAC-DE6876FE4A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D90147EA-EBC5-446E-BAAC-DE6876FE4A91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A63C4D8F-DF74-4E76-85C6-B851CF72B980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A63C4D8F-DF74-4E76-85C6-B851CF72B980}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A63C4D8F-DF74-4E76-85C6-B851CF72B980}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A63C4D8F-DF74-4E76-85C6-B851CF72B980}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0E0E8A97-B01C-4C30-BD65-452181E5AB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0E0E8A97-B01C-4C30-BD65-452181E5AB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E0E8A97-B01C-4C30-BD65-452181E5AB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
