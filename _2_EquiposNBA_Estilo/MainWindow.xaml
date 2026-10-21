@@ -5,42 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2_EquiposNBA"
         mc:Ignorable="d"
-        Title="2 Equipos NBA" Height="450" Width="900">
-    <StackPanel>
-        <Border BorderBrush="Black" BorderThickness="3" Margin="10" CornerRadius="3">
-            <StackPanel>
-                <Label HorizontalAlignment="Center" FontWeight="Bold" FontSize="30">Los Angeles Lakers</Label>
-                <WrapPanel ItemHeight="125">
-                    <Image Stretch="Uniform" Source="Assets/3_lakers.png"/>
-                    <Image Stretch="Uniform" Source="Assets/9_lakers.png"/>
-                    <Image Stretch="Uniform" Source="Assets/14_lakers.png"/>
-                    <Image Stretch="Uniform" Source="Assets/23_lakers.png"/>
-                    <Image Stretch="Uniform" Source="Assets/39_lakers.png"/>
-                </WrapPanel>
-                <StackPanel.Background>
+        Title="2 Equipos NBA" Height="450" Width="910">
+    <Window.Resources>
+        <Style TargetType="Border">
+            <!-- BorderBrush="Black" BorderThickness="3" Margin="10" CornerRadius="3"-->
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="CornerRadius" Value="3"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="StacKPanelLakers">
+            <Setter Property="Background">
+                <Setter.Value>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                         <GradientStop Color="MediumPurple" Offset="0"></GradientStop>
                         <GradientStop Color="Yellow" Offset="1"></GradientStop>
                     </LinearGradientBrush>
-                </StackPanel.Background>
-            </StackPanel>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="3" Margin="10" CornerRadius="3">
-            <StackPanel>
-                <Label HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30">Miami Heat</Label>
-                <WrapPanel ItemHeight="125">
-                    <Image Stretch="Uniform" Source="Assets/7_heat.png"/>
-                    <Image Stretch="Uniform" Source="Assets/13_heat.png"/>
-                    <Image Stretch="Uniform" Source="Assets/14_heat.png"/>
-                    <Image Stretch="Uniform" Source="Assets/22_heat.png"/>
-                    <Image Stretch="Uniform" Source="Assets/99_heat.png"/>
-                </WrapPanel>
-                <StackPanel.Background>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="StacKPanelMiamiHeat">
+            <Setter Property="Background">
+                <Setter.Value>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                         <GradientStop Color="Black" Offset="0"></GradientStop>
                         <GradientStop Color="Red" Offset="1"></GradientStop>
                     </LinearGradientBrush>
-                </StackPanel.Background>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="WrapPanel">
+            <Setter Property="ItemHeight" Value="125"></Setter>
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Stretch" Value="Uniform"/>
+        </Style>
+        <Style TargetType="Label">
+            
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="30"></Setter>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Border>
+            <StackPanel Style="{StaticResource StacKPanelLakers}">
+                <Label>Los Angeles Lakers</Label>
+                <WrapPanel>
+                    <Image Source="Assets/3_lakers.png"/>
+                    <Image Source="Assets/9_lakers.png"/>
+                    <Image Source="Assets/14_lakers.png"/>
+                    <Image Source="Assets/23_lakers.png"/>
+                    <Image Source="Assets/39_lakers.png"/>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+        <Border>
+            <StackPanel Style="{StaticResource StacKPanelMiamiHeat}">
+                <Label Foreground="White">Miami Heat</Label>
+                <WrapPanel>
+                    <Image Source="Assets/7_heat.png"/>
+                    <Image Source="Assets/13_heat.png"/>
+                    <Image Source="Assets/14_heat.png"/>
+                    <Image Source="Assets/22_heat.png"/>
+                    <Image Source="Assets/99_heat.png"/>
+                </WrapPanel>
             </StackPanel>
         </Border>
     </StackPanel>
