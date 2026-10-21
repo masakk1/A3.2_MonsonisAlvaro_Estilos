@@ -17,7 +17,7 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="FontSize" Value="20"></Setter>
         </Style>
-        <Style TargetType="Border">
+        <Style TargetType="Border" x:Key="BorderPanel">
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="BorderThickness" Value="3"/>
             <Setter Property="CornerRadius" Value="8"/>
@@ -34,11 +34,11 @@
         </Style>
     </Window.Resources>
     <DockPanel>
-        <StackPanel DockPanel.Dock="Bottom">
+        <StackPanel DockPanel.Dock="Bottom" Style="{StaticResource StackPanelCreditos}">
             <Label>N de imagenes: 10</Label>
             <Label>Diseñado por Alvaro Monsonis</Label>
         </StackPanel>
-        <Border DockPanel.Dock="Right">
+        <Border DockPanel.Dock="Right" Style="{StaticResource BorderPanel}">
             <DockPanel LastChildFill="False">
                 <StackPanel DockPanel.Dock="Top">
                     <Button>Añadir imagen</Button>
