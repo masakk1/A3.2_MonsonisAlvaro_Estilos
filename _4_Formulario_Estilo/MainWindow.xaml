@@ -5,37 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_7_Formulario"
         mc:Ignorable="d"
-        Title="7 Formulario" Height="450" Width="800">
+        Title="4 Formulario" Height="450" Width="800">
     <Grid ColumnDefinitions="2*,1*" RowDefinitions="Auto,Auto,Auto,1*,Auto">
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="40">Formulario</TextBlock>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2"
+                   Style="{StaticResource Titulo}">
+            Formulario
+        </TextBlock>
         <Border Grid.Row="1" Grid.Column="0"
-                Margin="5" Padding="5"
-                BorderBrush="Black" BorderThickness="3" CornerRadius="8"
+                Style="{StaticResource CajaFormulario}"
                 Background="LightSkyBlue">
             <StackPanel>
-                <Grid ColumnDefinitions="60,*,2,Auto" Margin="2">
+                <Grid ColumnDefinitions="60,*,2,Auto" Style="{StaticResource FilaFormulario}">
                     <TextBlock Grid.Column="0">Nombre</TextBlock>
                     <TextBox Grid.Column="1"/>
-                    <Image Grid.Column="3" Source="Assets/info.png" Width="20" ToolTip="Esto es el nombre"/>
+                    <Image Grid.Column="3" Style="{StaticResource InfoIcon}" ToolTip="Esto es el nombre"/>
                 </Grid>
-                <Grid ColumnDefinitions="60,*,2,Auto" Margin="2">
+                <Grid ColumnDefinitions="60,*,2,Auto" Style="{StaticResource FilaFormulario}">
                     <TextBlock Grid.Column="0">Edad</TextBlock>
                     <TextBox Grid.Column="1"/>
-                    <Image Grid.Column="3" Source="Assets/info.png" Width="20" ToolTip="Esto es la edad"/>
+                    <Image Grid.Column="3" Style="{StaticResource InfoIcon}" ToolTip="Esto es la edad"/>
                 </Grid>
-                <Grid ColumnDefinitions="60,*,2,Auto" Margin="2">
+                <Grid ColumnDefinitions="60,*,2,Auto" Style="{StaticResource FilaFormulario}">
                     <TextBlock Grid.Column="0">Direccion</TextBlock>
                     <TextBox Grid.Column="1"/>
-                    <Image Grid.Column="3" Source="Assets/info.png" Width="20" ToolTip="Esto es la direccion"/>
+                    <Image Grid.Column="3" Style="{StaticResource InfoIcon}" ToolTip="Esto es la direccion"/>
                 </Grid>
             </StackPanel>
         </Border>
         <Border Grid.Row="2" Grid.Column="0"
-                Margin="5" Padding="5"
-                BorderBrush="Black" BorderThickness="3" CornerRadius="8"
+                Style="{StaticResource CajaFormulario}"
                 Background="Beige">
             <StackPanel Orientation="Horizontal">
-                <GroupBox Header="Aficiones" BorderBrush="Gray" Width="200">
+                <GroupBox Header="Aficiones">
                     <StackPanel Margin="8">
                         <CheckBox>Hacer deporte</CheckBox>
                         <CheckBox>Viajar</CheckBox>
@@ -43,7 +44,7 @@
                         <CheckBox>Leer comics</CheckBox>
                     </StackPanel>
                 </GroupBox>
-                <GroupBox Header="Estado civil" BorderBrush="Gray" Width="200">
+                <GroupBox Header="Estado civil">
                     <StackPanel Margin="8">
                         <RadioButton>Soltero</RadioButton>
                         <RadioButton>Casado</RadioButton>
@@ -53,12 +54,11 @@
                 </GroupBox>
             </StackPanel>
         </Border>
-        <Image Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"
-               Source="Assets/foto.jpg" Stretch="Fill" Margin="12"/>
-        <TextBlock Grid.Row="4" Grid.Column="0" Margin="5" FontSize="20">Álvaro Monsonís Mas</TextBlock>
-        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" Margin="5" HorizontalAlignment="Right">
-            <Button Padding="5" Width="100" Margin="5,0,0,0">Aceptar</Button>
-            <Button Padding="5" Width="100" Margin="5,0,0,0">Cancelar</Button>
+        <Image Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource Creditos}">Álvaro Monsonís Mas</TextBlock>
+        <StackPanel Grid.Row="4" Grid.Column="1" Style="{StaticResource StackPanelBotones}">
+            <Button Style="{StaticResource ActionButton}">Aceptar</Button>
+            <Button Style="{StaticResource ActionButton}">Cancelar</Button>
         </StackPanel>
     </Grid>
 </Window>

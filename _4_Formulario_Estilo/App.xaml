@@ -4,6 +4,46 @@
              xmlns:local="clr-namespace:_7_Formulario"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="StackPanel" x:Key="StackPanelBotones">
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+        <Style TargetType="Border" x:Key="CajaFormulario">
+             <Setter Property="Margin" Value="5"/>
+             <Setter Property="Padding" Value="5"/>
+             <Setter Property="BorderBrush" Value="Black"/>
+             <Setter Property="BorderThickness" Value="3"/>
+             <Setter Property="CornerRadius" Value="8"/>
+         </Style>
+        <Style TargetType="GroupBox">
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="Width" Value="200"/>
+        </Style>
+        <Style TargetType="Grid" x:Key="FilaFormulario">
+            <Setter Property="Margin" Value="2"></Setter>
+        </Style>
+        <Style TargetType="Image" x:Key="InfoIcon">
+            <Setter Property="Source" Value="Assets/info.png"/>
+            <Setter Property="Width" Value="20"/>
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Margin" Value="12"/>
+            <Setter Property="Stretch" Value="Fill"/>
+            <Setter Property="Source" Value="Assets/foto.jpg"/>
+        </Style>
+        <Style TargetType="Button" x:Key="ActionButton">
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Titulo">
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Creditos">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
     </Application.Resources>
 </Application>
