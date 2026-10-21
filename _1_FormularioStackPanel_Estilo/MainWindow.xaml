@@ -5,42 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_1_FormularioStackPanel"
         mc:Ignorable="d"
-        Title="Formulario StackPanel" Height="300" Width="800">
+        Title="Formulario StackPanel" Height="300" Width="800"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="WidthAndHeight">
+        <Window.Resources>
+            <Style TargetType="StackPanel">
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+            <Style TargetType="StackPanel" x:Key="StackPanelAzul" BasedOn="{StaticResource {x:Type StackPanel}}">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <GradientStop Offset="0.0" Color="CornflowerBlue"/>
+                            <GradientStop Offset="1.0" Color="LightBlue"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="StackPanel" x:Key="StackPanelVerde" BasedOn="{StaticResource {x:Type StackPanel}}">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <GradientStop Offset="0.0" Color="Green"/>
+                            <GradientStop Offset="1.0" Color="LightGreen"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="StackPanel" x:Key="StackPanelMorado" BasedOn="{StaticResource {x:Type StackPanel}}">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <GradientStop Offset="0.0" Color="Magenta"/>
+                            <GradientStop Offset="1.0" Color="LightPink"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="StackPanel" x:Key="StackPanelBotones" BasedOn="{StaticResource {x:Type StackPanel}}">
+                <Setter Property="HorizontalAlignment" Value="Right"/>
+                <Setter Property="Orientation" Value="Horizontal"/>
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Margin" Value="5"></Setter>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontWeight" Value="Bold"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="Width" Value="100"></Setter>
+                <Setter Property="Margin" Value="7"></Setter>
+            </Style>
+        </Window.Resources>
     <Grid>
         <StackPanel>
-            <StackPanel Margin="5">
-                <Label FontWeight="Bold" FontSize="16">Nombre</Label>
-                <TextBox Margin="5"/>
-                <StackPanel.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Offset="0.0" Color="CornflowerBlue"/>
-                        <GradientStop Offset="1.0" Color="LightBlue"/>
-                    </LinearGradientBrush>
-                </StackPanel.Background>
+            <StackPanel Style="{StaticResource StackPanelAzul}">
+                <Label>Nombre</Label>
+                <TextBox/>
             </StackPanel>
-            <StackPanel Margin="5">
-                <Label FontWeight="Bold" FontSize="16">Dirección</Label>
-                <TextBox Margin="5"/>
-                <StackPanel.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Offset="0.0" Color="Green"/>
-                        <GradientStop Offset="1.0" Color="LightGreen"/>
-                    </LinearGradientBrush>
-                </StackPanel.Background>
+            <StackPanel Style="{StaticResource StackPanelVerde}">
+                <Label>Dirección</Label>
+                <TextBox/>
             </StackPanel>
-            <StackPanel Margin="5">
-                <Label FontWeight="Bold" FontSize="16">Correo electrónico</Label>
-                <TextBox Margin="5"/>
-                <StackPanel.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Offset="0.0" Color="Magenta"/>
-                        <GradientStop Offset="1.0" Color="LightPink"/>
-                    </LinearGradientBrush>
-                </StackPanel.Background>
+            <StackPanel Style="{StaticResource StackPanelMorado}">
+                <Label>Correo electrónico</Label>
+                <TextBox/>
             </StackPanel>
-            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button Width="100" Margin="7">Aceptar</Button>
-                <Button Width="100" Margin="7">Cancelar</Button>
+            <StackPanel Style="{StaticResource StackPanelBotones}">
+                <Button>Aceptar</Button>
+                <Button>Cancelar</Button>
             </StackPanel>
         </StackPanel>
     </Grid>
