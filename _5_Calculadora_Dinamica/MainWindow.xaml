@@ -6,46 +6,31 @@
         xmlns:local="clr-namespace:_5_Calculadora"
         mc:Ignorable="d"
         Title="5 Calculadora" Height="400" Width="250">
-    
+    <Window.Resources>
+        <Style TargetType="Border" x:Key="Border">
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+        </Style>
+        <Style TargetType="Button" x:Key="NumberButton">
+            <Setter Property="Margin" Value="1"></Setter>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="NumberButtonText">
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
+    </Window.Resources>
     <Grid RowDefinitions="1*,2*,Auto">
-        <Border Margin="1" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
+        <Border Margin="1" Grid.Row="0">
             <Viewbox HorizontalAlignment="Right">
                 <TextBlock x:Name="textBoxNumeros" />
             </Viewbox>
         </Border>
 
-        <Grid Grid.Row="1" HorizontalAlignment="Stretch" ColumnDefinitions="1*,1*,1*" RowDefinitions="1*,1*,1*">
-            
-            <Button Tag="1" Click="Button_OnClick" Margin="1" Grid.Row="0" Grid.Column="0">
-                <Viewbox><TextBlock>1</TextBlock></Viewbox>
-            </Button>
-            <Button Tag="2" Click="Button_OnClick" Margin="1" Grid.Row="0" Grid.Column="1">
-                <Viewbox><TextBlock>2</TextBlock></Viewbox>
-            </Button>
-            <Button Tag="3" Click="Button_OnClick" Margin="1" Grid.Row="0" Grid.Column="2">
-                <Viewbox><TextBlock>3</TextBlock></Viewbox>
-            </Button>
-            <Button Tag="4" Click="Button_OnClick" Margin="1" Grid.Row="1" Grid.Column="0">
-                <Viewbox><TextBlock>4</TextBlock></Viewbox>
-            </Button>
-            <Button Tag="5" Click="Button_OnClick" Margin="1" Grid.Row="1" Grid.Column="1">
-                <Viewbox><TextBlock>5</TextBlock></Viewbox>
-            </Button>
-            <Button Tag="6" Click="Button_OnClick" Margin="1" Grid.Row="1" Grid.Column="2">
-                <Viewbox><TextBlock>6</TextBlock></Viewbox>
-            </Button>
-            <Button Tag="7" Click="Button_OnClick" Margin="1" Grid.Row="2" Grid.Column="0">
-                <Viewbox><TextBlock>7</TextBlock></Viewbox>
-            </Button>
-            <Button Tag="8" Click="Button_OnClick" Margin="1" Grid.Row="2" Grid.Column="1">
-                <Viewbox><TextBlock>8</TextBlock></Viewbox>
-            </Button>
-            <Button Tag="9" Click="Button_OnClick" Margin="1" Grid.Row="2" Grid.Column="2">
-                <Viewbox><TextBlock>9</TextBlock></Viewbox>
-            </Button>
-        </Grid>
-        <Button Tag="0" Click="Button_OnClick" Margin="1" Grid.Row="2">
-            <TextBlock Margin="5">0</TextBlock>
+        <Grid x:Name="Botonera" Grid.Row="1"
+              ColumnDefinitions="1*,1*,1*" RowDefinitions="1*,1*,1*"
+              HorizontalAlignment="Stretch"/>
+        <Button Tag="0" Click="Button_OnClick" Style="{StaticResource NumberButton}" Grid.Row="2">
+            <TextBlock Style="{StaticResource NumberButtonText}">0</TextBlock>
         </Button>
     </Grid>
 </Window>
